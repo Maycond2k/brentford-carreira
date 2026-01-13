@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Modo Carreira – Brentford | Maycon Santos</title>
   <style>
     body {
@@ -46,6 +46,19 @@
       border-left: 5px solid #b40000;
       margin-bottom: 20px;
     }
+    .music-box {
+      text-align: center;
+      margin: 20px;
+    }
+    .music-box button {
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #b40000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -55,13 +68,11 @@
     }
   </style>
 </head>
-
 <body>
 
-<!-- 🔐 PROTEÇÃO POR SENHA -->
+<!-- 🔐 Proteção por senha -->
 <script>
   var senha = prompt("Digite a senha para acessar o site:");
-
   if (senha !== "chupabife") {
     alert("Senha incorreta!");
     window.location.href = "https://google.com";
@@ -74,6 +85,28 @@
   <p>Treinador: Maycon Santos (Brasil)</p>
 </header>
 
+<!-- 🎵 Botão de tocar/pausar música -->
+<div class="music-box">
+  <button id="botaoMusica">▶ Ouvir Hino do Brentford</button>
+</div>
+
+<script>
+  const musica = new Audio("audio/hino-brentford.mp3");
+  musica.loop = true;
+
+  const botao = document.getElementById("botaoMusica");
+
+  botao.addEventListener("click", function() {
+    if (musica.paused) {
+      musica.play();
+      botao.textContent = "⏸ Pausar Música";
+    } else {
+      musica.pause();
+      botao.textContent = "▶ Ouvir Hino do Brentford";
+    }
+  });
+</script>
+
 <nav>
   <a href="#historia">História</a>
   <a href="#financeiro">Financeiro</a>
@@ -84,10 +117,10 @@
 <section id="historia">
   <h2>História do Treinador</h2>
   <div class="card">
-    <p><strong>Maycon Santos</strong>, brasileiro de 42 anos, natural de São Paulo (Zona Sul), construiu sua carreira no futsal antes de se tornar treinador.</p>
-    <p>Ex-jogador do <strong>Amigos FC</strong>, <strong>Magnus Futsal</strong> e <strong>São Paulo Futsal</strong>, encerrou a carreira aos 38 anos por problemas nos joelhos.</p>
-    <p>Foi <strong>campeão mundial pela Seleção Brasileira de Futsal</strong> e, após a aposentadoria, decidiu seguir carreira como treinador.</p>
-    <p>Obteve licença da CBF e foi para a Inglaterra se especializar, iniciando seu trabalho nas categorias de base do Brentford.</p>
+    <p><strong>Maycon Santos</strong>, brasileiro de 42 anos, natural de São Paulo (Zona Sul).</p>
+    <p>Ex-jogador do <strong>Amigos FC</strong>, <strong>Magnus Futsal</strong> e <strong>São Paulo Futsal</strong>.</p>
+    <p>Campeão mundial pela <strong>Seleção Brasileira de Futsal</strong>.</p>
+    <p>Após encerrar a carreira, iniciou sua trajetória como treinador na Inglaterra.</p>
   </div>
 </section>
 
@@ -95,33 +128,31 @@
   <h2>Gestão Financeira</h2>
   <div class="card">
     <ul>
-      <li>Caixa inicial ao assumir: <strong>€63 milhões</strong></li>
-      <li>Investimento em jovens: <strong>€40 milhões</strong></li>
-      <li>Contratações: <strong>11 jovens promessas desconhecidas</strong></li>
-      <li>Vendas de jogadores: <strong>€100 milhões arrecadados</strong></li>
-      <li>Caixa atual do clube: <strong>+€100 milhões</strong></li>
+      <li>Caixa inicial: <strong>€63 milhões</strong></li>
+      <li>Investimento: <strong>€40 milhões</strong></li>
+      <li>Jogadores contratados: <strong>11 jovens promessas</strong></li>
+      <li>Vendas: <strong>€100 milhões</strong></li>
+      <li>Caixa atual: <strong>+€100 milhões</strong></li>
     </ul>
-    <p>O Brentford tornou-se referência em gestão esportiva e valorização de ativos.</p>
   </div>
 </section>
 
 <section id="temporada">
   <h2>Temporada Atual</h2>
   <div class="card">
-    <p>O Brentford iniciou a temporada com o objetivo de <strong>lutar contra o rebaixamento</strong> e se manter na Premier League.</p>
-    <p>Hoje, o time é o <strong>líder do campeonato</strong>, praticando um futebol envolvente, intenso e bonito.</p>
-    <p>Esta é a <strong>melhor campanha da história do clube</strong>, após 136 anos.</p>
+    <p>Time que brigaria contra o rebaixamento, hoje é o <strong>líder da Premier League</strong>.</p>
+    <p>Estilo de jogo envolvente e moderno, parando o mundo do futebol.</p>
   </div>
 </section>
 
 <section id="objetivos">
-  <h2>Objetivos do Projeto</h2>
+  <h2>Objetivos</h2>
   <div class="card">
     <ul>
-      <li>Conquistar a <strong>Premier League</strong></li>
-      <li>Disputar a <strong>FA Cup</strong></li>
-      <li>Buscar a <strong>Carabao Cup</strong></li>
-      <li>Transformar o Brentford em uma <strong>potência mundial</strong></li>
+      <li>Ser campeão da <strong>Premier League</strong></li>
+      <li>Conquistar a <strong>FA Cup</strong></li>
+      <li>Vencer a <strong>Carabao Cup</strong></li>
+      <li>Tornar o Brentford uma <strong>potência mundial</strong></li>
     </ul>
   </div>
 </section>
