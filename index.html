@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -56,10 +55,20 @@
     }
   </style>
 </head>
+
 <body>
 
+<!-- 🔐 PROTEÇÃO POR SENHA -->
+<script>
+  var senha = prompt("Digite a senha para acessar o site:");
+
+  if (senha !== "chupabife") {
+    alert("Senha incorreta!");
+    window.location.href = "https://google.com";
+  }
+</script>
+
 <header>
-  <!-- ESCUDO DO BRENTFORD -->
   <img src="img/brentford-logo.png" alt="Escudo do Brentford" style="width:120px; margin-bottom:10px;">
   <h1>Brentford FC – Modo Carreira EA FC 26</h1>
   <p>Treinador: Maycon Santos (Brasil)</p>
@@ -100,8 +109,8 @@
   <h2>Temporada Atual</h2>
   <div class="card">
     <p>O Brentford iniciou a temporada com o objetivo de <strong>lutar contra o rebaixamento</strong> e se manter na Premier League.</p>
-    <p>Hoje, o time é o <strong>líder do campeonato</strong>, praticando um futebol envolvente, intenso e bonito, chamando a atenção do mundo.</p>
-    <p>Esta é a <strong>melhor campanha da história do clube</strong>, após 136 anos desde sua fundação.</p>
+    <p>Hoje, o time é o <strong>líder do campeonato</strong>, praticando um futebol envolvente, intenso e bonito.</p>
+    <p>Esta é a <strong>melhor campanha da história do clube</strong>, após 136 anos.</p>
   </div>
 </section>
 
@@ -110,7 +119,7 @@
   <div class="card">
     <ul>
       <li>Conquistar a <strong>Premier League</strong></li>
-      <li>Disputar títulos da <strong>FA Cup</strong></li>
+      <li>Disputar a <strong>FA Cup</strong></li>
       <li>Buscar a <strong>Carabao Cup</strong></li>
       <li>Transformar o Brentford em uma <strong>potência mundial</strong></li>
     </ul>
