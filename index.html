@@ -70,7 +70,6 @@
 </head>
 <body>
 
-<!-- 🔐 Proteção por senha -->
 <script>
   var senha = prompt("Digite a senha para acessar o site:");
   if (senha !== "chupabife") {
@@ -83,9 +82,27 @@
   <img src="img/brentford-logo.png" alt="Escudo do Brentford" style="width:120px; margin-bottom:10px;">
   <h1>Brentford FC – Modo Carreira EA FC 26</h1>
   <p>Treinador: Maycon Santos (Brasil)</p>
+  <p><strong>Salário do Técnico:</strong> €83.000 por semana</p>
 </header>
 
-<!-- 🎵 Botão de tocar/pausar música -->
+<!-- ✅ FOTO DO TREINADOR (ÚNICO ACRÉSCIMO) -->
+<section id="foto-treinador">
+  <div class="card" style="text-align:center;">
+    <img 
+      src="img/treinador-maycon.jpg" 
+      alt="Treinador Maycon Santos"
+      style="
+        width:220px;
+        border-radius:15px;
+        box-shadow:0 8px 20px rgba(0,0,0,0.35);
+        margin-bottom:15px;
+      "
+    >
+    <p><strong>Maycon Santos</strong></p>
+    <p>Treinador do Brentford FC</p>
+  </div>
+</section>
+
 <div class="music-box">
   <button id="botaoMusica">▶ Ouvir Hino do Brentford</button>
 </div>
@@ -93,10 +110,9 @@
 <script>
   const musica = new Audio("audio/hino-brentford.mp3");
   musica.loop = true;
-
   const botao = document.getElementById("botaoMusica");
 
-  botao.addEventListener("click", function() {
+  botao.addEventListener("click", function () {
     if (musica.paused) {
       musica.play();
       botao.textContent = "⏸ Pausar Música";
@@ -111,6 +127,9 @@
   <a href="#historia">História</a>
   <a href="#financeiro">Financeiro</a>
   <a href="#temporada">Temporada Atual</a>
+  <a href="#tatica">Tática</a>
+  <a href="#elenco-titular">Elenco Titular</a>
+  <a href="#elenco-reserva">Elenco Reserva</a>
   <a href="#objetivos">Objetivos</a>
 </nav>
 
@@ -142,6 +161,65 @@
   <div class="card">
     <p>Time que brigaria contra o rebaixamento, hoje é o <strong>líder da Premier League</strong>.</p>
     <p>Estilo de jogo envolvente e moderno, parando o mundo do futebol.</p>
+  </div>
+</section>
+
+<section id="tatica">
+  <h2>Tática do Time</h2>
+
+  <div class="card">
+    <p><strong>Predefinição:</strong> Personalizado</p>
+    <p><strong>Esquema:</strong> 4-2-1-3</p>
+    <p><strong>Estilo de armação:</strong> Passe Curto</p>
+    <p><strong>Abordagem defensiva:</strong> Equilibrado</p>
+  </div>
+
+  <div class="card">
+    <h3>Plano de Treino</h3>
+    <p>Intenso: 70</p>
+    <p>Pesado: 80</p>
+    <p>Leve: 80</p>
+    <p>Recuperação: 70</p>
+  </div>
+
+  <div class="card">
+    <h3>Funções de Atletas</h3>
+    <p><strong>Goleiro:</strong> GL que sai jogando<br><strong>Foco:</strong> Defesa</p>
+    <p><strong>Laterais:</strong> Lateral<br><strong>Foco:</strong> Equilibrado</p>
+    <p><strong>Volantes:</strong> Contenção<br><strong>Foco:</strong> Defesa</p>
+    <p><strong>Meia Campista:</strong> Armador<br><strong>Foco:</strong> Equilibrado</p>
+    <p><strong>Pontas:</strong> Cortar pra dentro<br><strong>Foco:</strong> Equilibrado</p>
+    <p><strong>Centroavante:</strong> Centroavante<br><strong>Foco:</strong> Ataque</p>
+  </div>
+</section>
+
+<section id="elenco-titular">
+  <h2>Elenco Titular</h2>
+  <div class="card">
+    <p><strong>Goleiro:</strong> Caoimhin Kelleher</p>
+    <p><strong>Lateral Direito:</strong> Michael Kayode</p>
+    <p><strong>Zagueiros:</strong><br>Sepp Van De Berg<br>Nathan Collins</p>
+    <p><strong>Lateral Esquerdo:</strong> Keane Lewis-Potter</p>
+    <p><strong>Volantes:</strong><br>Jordan Henderson<br>Yegor Yarmoliuk</p>
+    <p><strong>Meio-Campista:</strong> Mikkel Damsgaard</p>
+    <p><strong>Ponta Direita:</strong> Dango Ouattara</p>
+    <p><strong>Ponta Esquerda:</strong> Kevin Schade</p>
+    <p><strong>Centroavante:</strong> Igor Thiago</p>
+  </div>
+</section>
+
+<section id="elenco-reserva">
+  <h2>Elenco Reserva e Jovens Promessas</h2>
+  <div class="card">
+    <p><strong>Goleiro:</strong> Rome-Jayden Owusu-Oduro</p>
+    <p><strong>Lateral Direito:</strong> Nicolò Savona</p>
+    <p><strong>Zagueiros:</strong><br>Josh Acheampong<br>Ayden Heaven</p>
+    <p><strong>Lateral Esquerdo:</strong> Adam Aznou</p>
+    <p><strong>Volantes:</strong><br>Jorthy Mokio<br>Metinho</p>
+    <p><strong>Meio-Campista:</strong> Konstantinos Karetsas</p>
+    <p><strong>Ponta Direita:</strong> Lucas Ferreira Ferreira</p>
+    <p><strong>Ponta Esquerda:</strong> Rio Ngumoha</p>
+    <p><strong>Centroavante:</strong> Zine</p>
   </div>
 </section>
 
