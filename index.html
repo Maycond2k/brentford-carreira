@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Modo Carreira – Brentford | Maycon Santos</title>
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -59,6 +60,24 @@
       border-radius: 8px;
       cursor: pointer;
     }
+
+    /* Galeria */
+    .galeria-grid {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .galeria-item {
+      text-align: center;
+    }
+    .galeria-item img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -68,9 +87,9 @@
     }
   </style>
 </head>
+
 <body>
 
-<!-- 🔐 Proteção por senha -->
 <script>
   var senha = prompt("Digite a senha para acessar o site:");
   if (senha !== "chupabife") {
@@ -86,7 +105,6 @@
   <p><strong>Salário do Técnico:</strong> €83.000 por semana</p>
 </header>
 
-<!-- FOTO DO TREINADOR -->
 <section id="foto-treinador">
   <div class="card" style="text-align:center;">
     <img src="img/treinador-maycon.jpg" alt="Treinador Maycon Santos"
@@ -96,7 +114,6 @@
   </div>
 </section>
 
-<!-- 🎵 Música -->
 <div class="music-box">
   <button id="botaoMusica">▶ Ouvir Hino do Brentford</button>
 </div>
@@ -121,6 +138,9 @@
   <a href="#historia">História</a>
   <a href="#financeiro">Financeiro</a>
   <a href="#temporada">Temporada Atual</a>
+  <a href="#titulos">Títulos</a>
+  <a href="#estatisticas">Estatísticas</a>
+  <a href="#galeria-titulos">Galeria de Títulos</a>
   <a href="#tatica">Tática</a>
   <a href="#elenco-titular">Elenco Titular</a>
   <a href="#elenco-reserva">Elenco Reserva</a>
@@ -132,76 +152,47 @@
   <h2>História do Treinador</h2>
   <div class="card">
 
-    <p>
-      <strong>Maycon Santos</strong>, brasileiro de 42 anos, natural de São Paulo (Zona Sul), é um ex-jogador de futebol e futsal
-      que construiu uma trajetória marcada por superação, títulos e paixão pelo esporte.
-    </p>
+    <p><strong>Maycon Santos</strong>, brasileiro de 42 anos, natural de São Paulo (Zona Sul), é um ex-jogador de futebol e futsal
+      que construiu uma trajetória marcada por superação, títulos e paixão pelo esporte.</p>
 
-    <p>
-      Sua carreira começou no tradicional <strong>Amigos FC</strong>, onde deu os primeiros passos no futsal.
+    <p>Sua carreira começou no tradicional <strong>Amigos FC</strong>, onde deu os primeiros passos no futsal.
       Em seguida, se transferiu para o <strong>Magnus Futsal</strong>, clube onde viveu um dos momentos mais importantes
-      da sua carreira.
-    </p>
+      da sua carreira.</p>
 
-    <p>
-      Atuando em alto nível, Maycon foi <strong>convocado para a Seleção Brasileira de Futsal</strong>,
-      conquistando o título de <strong>Campeão Mundial</strong>, um feito que marcou definitivamente seu nome no esporte.
-    </p>
+    <p>Atuando em alto nível, Maycon foi <strong>convocado para a Seleção Brasileira de Futsal</strong>,
+      conquistando o título de <strong>Campeão Mundial</strong>, um feito que marcou definitivamente seu nome no esporte.</p>
 
-    <p>
-      Após o sucesso no futsal, veio a grande virada: Maycon teve a oportunidade de atuar no
+    <p>Após o sucesso no futsal, veio a grande virada: Maycon teve a oportunidade de atuar no
       <strong>São Paulo Futsal</strong>, consolidando sua carreira em um dos maiores clubes do país.
       Alguns anos depois, retornou ao <strong>Amigos FC</strong>, clube que o revelou,
       onde encerrou sua carreira como atleta aos <strong>38 anos</strong>,
-      devido a <strong>problemas crônicos nos joelhos</strong>.
-    </p>
+      devido a <strong>problemas crônicos nos joelhos</strong>.</p>
 
-    <p>
-      Apaixonado pelo futebol, Maycon decidiu seguir no esporte, agora fora das quadras.
+    <p>Apaixonado pelo futebol, Maycon decidiu seguir no esporte, agora fora das quadras.
       Seu plano inicial era se tornar treinador de futsal, mas o destino o levou para o
-      <strong>futebol de campo</strong> — para a alegria da torcida do <strong>Brentford</strong>.
-    </p>
+      <strong>futebol de campo</strong>.</p>
 
-    <p>
-      Com a licença de treinador obtida pela <strong>CBF</strong>, Maycon se mudou para
+    <p>Com a licença de treinador obtida pela <strong>CBF</strong>, Maycon se mudou para
       <strong>Londres, Inglaterra</strong>, onde sua vida mudou completamente.
       Lá, conheceu representantes do <strong>Brentford FC</strong>, que o convidaram para integrar
-      a comissão técnica das <strong>categorias de base</strong> como auxiliar técnico.
-    </p>
+      a comissão técnica das <strong>categorias de base</strong>.</p>
 
-    <p>
-      Seu trabalho chamou atenção rapidamente. A filosofia de jogo moderna, as ideias táticas
-      e a capacidade de desenvolver jovens talentos o levaram à promoção para
-      <strong>treinador do time Sub-20</strong>, aos <strong>40 anos de idade</strong>.
-    </p>
+    <p>Seu trabalho chamou atenção rapidamente e o levou à promoção para
+      <strong>treinador do time Sub-20</strong>.</p>
 
-    <p>
-      Dois anos depois, o Brentford viveu uma temporada histórica:
+    <p>Dois anos depois:
       <br>🏆 <strong>Campeão da EFL Championship</strong>
       <br>🥈 <strong>Vice-campeão da Carabao Cup</strong>
       <br>⬆️ <strong>Acesso à Premier League</strong>
     </p>
 
-    <p>
-      No entanto, após o sucesso, o clube sofreu um forte desmanche com a saída de suas principais estrelas
-      e do treinador principal. O time perdeu o rumo.
-    </p>
-
-    <p>
-      Foi então que o presidente do clube tomou uma decisão ousada:
-      apostar no jovem treinador que vinha se destacando nas categorias de base.
-    </p>
-
-    <p>
-      Aos <strong>42 anos</strong>, <strong>Maycon Santos</strong> assumiu o comando do
-      <strong>time principal do Brentford FC</strong>.
-    </p>
+    <p>Aos <strong>42 anos</strong>, <strong>Maycon Santos</strong> assumiu o comando do
+      <strong>time principal do Brentford FC</strong>.</p>
 
     <p><strong>E o resto… é história.</strong></p>
 
   </div>
 </section>
-
 
 <section id="financeiro">
   <h2>Gestão Financeira</h2>
@@ -212,17 +203,119 @@
       <li>Jogadores contratados: <strong>11 jovens promessas</strong></li>
       <li>Vendas: <strong>€100 milhões</strong></li>
       <li>Caixa atual: <strong>+€100 milhões</strong></li>
+      <li>Valor atual do clube: <strong>€659,62 milhões</strong></li>
     </ul>
   </div>
 </section>
 
-<section id="temporada">
+
+<<section id="temporada">
   <h2>Temporada Atual</h2>
   <div class="card">
-    <p>Time que brigaria contra o rebaixamento, hoje é o <strong>líder da Premier League</strong>.</p>
-    <p>Estilo de jogo envolvente e moderno, parando o mundo do futebol.</p>
+    <p><strong>Temporada 25/26</strong></p>
+    <p>
+      Time que brigaria contra o rebaixamento foi
+      <strong>campeão da Premier League</strong>,
+      <strong>Carabao Cup</strong> e da
+      <strong>Copa da Inglaterra (FA Cup)</strong>.
+    </p>
+    <p>
+      Estilo de jogo envolvente e moderno,
+      que vem parando o mundo do futebol.
+    </p>
   </div>
 </section>
+
+
+<section id="titulos">
+  <h2>🏆 Títulos da Temporada</h2>
+  <div class="card">
+    <p><strong>🏆 Premier League</strong><br>Temporada 2025/2026</p>
+    <p><strong>🏆 Carabao Cup</strong><br>Temporada 2025/2026</p>
+    <p><strong>🏆 FA Cup (Copa da Inglaterra)</strong><br>Temporada 2025/2026</p>
+  </div>
+</section>
+
+<section id="estatisticas">
+  <h2>📊 Estatísticas dos Atletas – Temporada 2025/2026</h2>
+
+  <div class="card">
+    <h3>Premier League – Artilheiros</h3>
+    <p>
+      Igor Thiago — <strong>40 gols</strong> (25 partidas)<br>
+      Konstantinos Karetsas — <strong>25 gols</strong> (32 partidas)
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Premier League – Assistências</h3>
+    <p>
+      Igor Thiago — <strong>17 assistências</strong> (25 partidas)<br>
+      Konstantinos Karetsas — <strong>17 assistências</strong> (32 partidas)<br>
+      Mikkel Damsgaard — <strong>16 assistências</strong> (28 partidas)
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Carabao Cup – Artilheiros</h3>
+    <p>
+      Konstantinos Karetsas — <strong>6 gols</strong> (6 partidas)<br>
+      Zine — <strong>6 gols</strong> (6 partidas)
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Carabao Cup – Assistências</h3>
+    <p>
+      Konstantinos Karetsas — <strong>5 assistências</strong> (6 partidas)<br>
+      Lucas Ferreira — <strong>5 assistências</strong> (6 partidas)
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>FA Cup – Artilheiros</h3>
+    <p>
+      Igor Thiago — <strong>17 gols</strong> (6 partidas)<br>
+      Dango Ouattara — <strong>9 gols</strong> (6 partidas)
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>FA Cup – Assistências</h3>
+    <p>
+      Mikkel Damsgaard — <strong>12 assistências</strong> (6 partidas)<br>
+      Dango Ouattara — <strong>8 assistências</strong> (6 partidas)<br>
+      Igor Thiago — <strong>8 assistências</strong> (6 partidas)
+    </p>
+  </div>
+</section>
+
+
+<<section id="galeria-titulos">
+  <h2>📸 Galeria de Títulos</h2>
+
+  <div class="galeria-grid">
+    <div class="galeria-item">
+      <h3>Carabao Cup</h3>
+      <p>2025/2026</p>
+      <img src="img/carabao-cup-2526.jpg">
+    </div>
+
+    <div class="galeria-item">
+      <h3>Premier League</h3>
+      <p>2025/2026</p>
+      <img src="img/premier-league-2526.jpg">
+    </div>
+  </div>
+
+<div class="galeria-item">
+  <h3>FA Cup</h3>
+  <p>Temporada 2025/2026</p>
+  <img src="img/fa-cup-2526.jpg" alt="FA Cup 2025/2026">
+</div>
+
+</section>
+
 
 <section id="tatica">
   <h2>Tática do Time</h2>
